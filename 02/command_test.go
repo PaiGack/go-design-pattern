@@ -23,6 +23,4 @@ func TestCommand(t *testing.T) {
 	shutdownCommand := NewShutdownCommand(electricCooker)
 	electricCookerInvoker.SetCookCommand(shutdownCommand)
 	fmt.Println(electricCookerInvoker.ExecuteCookCommand())
-
-	t.Fail()
 }
